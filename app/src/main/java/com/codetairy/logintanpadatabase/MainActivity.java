@@ -48,5 +48,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void toDaftar(View v){
+        Intent intentDaftar = new Intent(MainActivity.this, HalamanDaftar.class);
+        MainActivity.this.startActivity(intentDaftar);
+        MainActivity.this.finish();
+    }
 
 }

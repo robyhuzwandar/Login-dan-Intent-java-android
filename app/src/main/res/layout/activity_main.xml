@@ -43,7 +43,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lupa Password ?"
-        android:layout_marginTop="35dp"/>
+        android:text="Daftar Sekarang ?"
+        android:layout_marginTop="35dp"
+        android:onClick="toDaftar"/>
 
 </LinearLayout>

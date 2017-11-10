@@ -16,14 +16,12 @@ public class HalamanTampil extends AppCompatActivity {
         txt_nama = (TextView)findViewById(R.id.txt_namaT);
         txt_nim = (TextView)findViewById(R.id.txt_nimT);
         txt_alamat = (TextView)findViewById(R.id.txt_alamatT);
-
-        Bundle b = getIntent().getExtras();
-        nama = b.getString("parse_nama");
-        nim = b.getString("parse_nim");
-        alamat = b.getString("parse_alamat");
+        nama = getIntent().getStringExtra("parse_nama");
+        nim = getIntent().getStringExtra("parse_nim");
+        alamat = getIntent().getStringExtra("parse_alamat");
 
         txt_nama.setText("Nama : " +nama);
         txt_nim.setText("Nim : " +nim);
-        txt_alamat.setText("Alamat : " +alamat);
+        txt_alamat.setText("Alamat : " + alamat);
     }
 }

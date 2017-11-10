@@ -26,11 +26,14 @@ public class HalamanDaftar extends AppCompatActivity {
         alamat = txt_alamat.getText().toString();
 
         Intent i = new Intent(HalamanDaftar.this, HalamanTampil.class);
-        Bundle b = new Bundle();
-        b.putString("Parse_nama", nama);
-        b.putString("Parse_nim", nim);
-        b.putString("Parse_alamat", alamat);
-        i.putExtras(b);
+        i.putExtra("parse_nama", nama );
+        i.putExtra("parse_nim", nim );
+        i.putExtra("parse_alamat", alamat );
+//        Bundle b = new Bundle();
+//        b.putString("Parse_nama", nama);
+//        b.putString("Parse_nim", nim);
+//        b.putString("Parse_alamat", alamat);
+//        i.putExtras(b);
         startActivity(i);
     }
 }

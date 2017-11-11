@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Login</string>
+    <string-array name="sp_jurusan">
+        <item>S1 Teknik Infromatika</item>
+        <item>D3 Tekni Informatika</item>
+        <item>D3 Manajemen Informatika</item>
+        <item>S1 DKV</item>
+    </string-array>
 </resources>
